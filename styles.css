@@ -1,5 +1,171 @@
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
+    background-color: #355C7D;
+    margin: 0; 
+    margin-top: 145px; 
+  }
+  html {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-rows: 140px auto 1fr 100px;
+    grid-template-areas:
+      "header"
+      "search"
+      "main"
+      "footer";
+  }
+  .header {
+    grid-area: header;
+  }
+  .search {
+    grid-area: search;
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin: 22px;
+  }
+  .search-container input[type="text"] {
+    padding: 16px;
+    font-size: 16px;
+    border: 2px solid #C65B7B;
+    border-radius: 5px;
+    width: 320px;
+    box-sizing: border-box;
+  }
+  .search-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #C65B7B;
+    color: white;
+    cursor: pointer;
+    margin-left: 6px;
+  }
+  .search-container button:hover {
+    background-color: #F67280;
+  }
+  
+  
+  .profile-container {
+    position: relative;
+    width: 591px;
+    height: 318px;
+  }
+  .profile-container svg:first-of-type {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .profile-name {
+    position: absolute;
+    top: 28px; 
+    left: 327px;
+    z-index: 1;
+    color: #fff;
+  }
+  .profile-name-header {
+    font-family: "Lato", "Serif", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  .profile-details {
+    font-family: "Lato", "Serif", sans-serif;
+    font-size: 16px;
+    color: #000000;
+  }
+  .profile-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  .profile-icon {
+    position: absolute;
+    top: 14px; 
+    left: 15px;
+    z-index: 1;
+    width: 280px; 
+  }
+  
+  .container--0- {
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    grid-gap: 20px; 
+    justify-items: 0px; 
+    align-items: 0px; 
+    width: 100vw;
+    padding: 20px 40px; 
+    border-bottom: 2px solid #000; 
+    background-color: #fff; 
+    box-sizing: border-box; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; 
+    height: 140px; 
+    overflow-x: hidden; 
+  }
+  .container-header svg {
+    display: flex;
+    align-items: left; 
+    grid-column: 1;
+    margin-top: -10px
+  }
+  .container-header {
+    display: flex;
+    align-items: center; 
+    grid-column: 1 / 2;
+    margin-top: -10px
+  }
+  .container-0-1-1 {
+    display: flex;
+    justify-content: flex-start; 
+    grid-column: 3 / 5; 
+    gap: 30px;
+    align-items: center;
+  }
+  .home-button-text,
+  .profile-button-text,
+  .about-button-text {
+    font-size: 16px;
+    font-family: "Lato", "Serif", sans-serif;
+    color: #F8B185;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .container-header-text {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Lato", "Serif", sans-serif; 
+    color: #F8B185;
+    cursor: pointer;
+    margin: 0; /* Ensure no default margin */
+  }
+  
+  .profile-display-grid {
+    display: grid;
+    grid-template-rows: 350px 350px;
+    grid-template-columns: 680px 680px;
+  }
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
